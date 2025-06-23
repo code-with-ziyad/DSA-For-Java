@@ -1,11 +1,14 @@
 public class loop {
      public static void main(String[] args){
        
-        // for loop
+        // while loop
         
-      for(int counter = 1; counter < 101; counter ++){
-       System.out.println(counter);
-      }
+        int i = 0;
+        while(i<=111){
+            System.out.println(i);
+            i++;
+        }    
+      
         }
 
      }
