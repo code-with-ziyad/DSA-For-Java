@@ -3,9 +3,10 @@ public class loop {
        
         // for loop
         
-        for(int x = 0; x < 50;  x = x + 1){
-            System.out.println("Ziyad Aftab");
+      for(int counter = 1; counter < 101; counter ++){
+       System.out.println(counter);
+      }
         }
 
      }
-}
+
