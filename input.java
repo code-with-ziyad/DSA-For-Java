@@ -1,39 +1,33 @@
 import java.util.Scanner;
-
-public class input{
+public class input {
     public static void main(String[] args) {
+        
 
-    System.out.print("*\n**\n***\n****\n"); // solve 1 question for println and \n.
-
-    int a = 27;
-    int b = 35;
-
-    int sum = a*b;
-    System.out.println(sum); // multiply two numbers 
-
-    // solve 2 question for 2nd class
-    int x = 10;
-    int y = 5;
-
-    int ans = (x*y) / (x-y);
+   Scanner sc = new Scanner (System.in);
+   System.out.println("enter your first Number:");
+    int a = sc.nextInt();
+    System.out.println("enter your operater Number:");
+    char b = sc.next().charAt(0);
+    System.out.println("enter your second Number:");
+    int c = sc.nextInt();
     
-    System.out.println(ans);
-
-    //scanner
-//    Scanner Anas = new Scanner(System.in);
-//    String fullname = Anas.nextLine();
-//    System.out.println(fullname);
-
-   //nextint
-   //nextfloat
-   //nextdouble, etc...
-   
-    Scanner Numbers = new Scanner(System.in);
-    System.out.println("enter your first Number ");
-   int number1 = Numbers.nextInt();
-       System.out.println("enter your Second Number ");
-   int number2 = Numbers.nextInt();
-   System.out.println(number1 + number2);
-
+   switch (b) {
+    case '+':
+        System.out.println(a+c);
+        break;
+   case '-':
+        System.out.println(a-c);
+        break;
+        case '/':
+        System.out.println(a/c);
+        break;
+        case '*':
+        System.out.println(a*c);
+        break;
+    default:
+    System.out.println(" operater is unvalid!");
+        break;
+   }
+    
     }
 }
