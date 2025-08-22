@@ -1,19 +1,26 @@
-
-import java.util.Scanner;
+import java.util.*;
 public class question1 {
     public static void main(String[] args) {
-        
-        Scanner sc  = new Scanner(System.in);
-        System.out.println("first number");
-        int a = sc.nextInt();
-        System.out.println("Second number");
-        int b = sc.nextInt();
-        System.out.println("THIRD number");
-        int c = sc.nextInt();
-        int sum = a+b+c;
-        System.out.println("this is the addition of 3 value:" + sum);
+         
+    Scanner sc = new Scanner(System.in);
+   
+      System.out.print("which times use Number?");
 
-        System.out.println("this is the divition of 3 numbers " + sum/3);
-
+      int n = sc.nextInt();
+         
+      int sum = 0;
+      
+      for (int i = 0; i < n; i++) {
+        System.out.println("Enter number" +(i+1) + ": ");
+          int a = sc.nextInt();
+        sum = sum + a;
+      }
+         System.out.print("this the some of number: " + sum);
+     
+    
+      
+    
+    
+     
     }
 }
