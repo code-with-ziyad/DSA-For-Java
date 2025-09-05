@@ -9,6 +9,9 @@ public void write() {
         System.out.println(this.color+ "\n" +this.type);
 
     }
+    pen(){
+        System.out.println("constructer called");    //jitni bar constructer called hoga itni bar ye print hotha jayega
+    }
 }
 
 public class OOP{
@@ -21,6 +24,9 @@ public class OOP{
         pen pen2 = new pen();
         pen2.type = "ball";
         pen2.color = "black";
+
+
+         // called functions 
 
         pen1.printcolor();   // call pen1 properties 
         pen2.printcolor();    // call pen2 properties
